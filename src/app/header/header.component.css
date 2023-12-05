@@ -1,0 +1,21 @@
+ /*Header*/
+ 
+ .firstsight {
+     min-height: 500px;
+     background: url("https://cutewallpaper.org/23/aesthetic-mountain-wallpaper/71211050.jpg");
+     background-position: center;
+     background-size: cover;
+ }
+ 
+ .bla {
+     padding: 50px;
+ }
+ 
+ .bla p {
+     display: inline-block;
+     padding: 10px 25px;
+     background-color: var(--g1-header);
+     color: black;
+     font-style: italic;
+     border-radius: 10px;
+ }

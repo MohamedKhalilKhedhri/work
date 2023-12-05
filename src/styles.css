@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --tertiary-color: #28a745;
+    --blue: #293b49;
+    --pink: #fdabaf;
+    --pink-light: #ffe0e6;
+    --green: #04cba0;
+    --green-dark: #01ac88;
+    --white: white;
+    --g1-header: aquamarine;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    /* Width of the scrollbar */
+    background-color: rgb(213, 213, 213);
+    /* Background color of the scrollbar */
+}
+
+ ::-webkit-scrollbar-thumb {
+    border-radius: 30px;
+    /* Border radius of the scrollbar thumb */
+    background-color: var(--secondary-color);
+    /* Background color of the scrollbar thumb */
+}

@@ -1,0 +1,27 @@
+<div class="PopUp-Container" *ngIf="popUpImage" @fadeIn>
+    <button class="material-symbols-outlined previous" (click)="NextImg()">arrow_forward_ios</button>
+    <button class="material-symbols-outlined next" (click)="PrevImg()">arrow_forward_ios</button>
+    <div class="PopUp-div">
+        <button (click)="closePopUpHandler()" class="material-symbols-outlined closebtn">close</button>
+
+        <div class="ImageBorder">
+            <ng-container *ngIf="lecture == 'img'">
+                <img [src]="popUpImage" alt="">
+            </ng-container>
+            <ng-container *ngIf="lecture == 'vid'">
+
+                <video *ngIf="popUpImage" preload="auto" controls>
+                        <source [src]="popUpImage" type="video/mp4" >
+                    
+                </video>
+
+
+
+
+            </ng-container>
+        </div>
+
+
+        <p class="PopUp-div-description">{{ description }}</p>
+    </div>
+</div>

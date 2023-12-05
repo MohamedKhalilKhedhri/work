@@ -1,0 +1,13 @@
+<section class="gallery-1">
+    <ng-container *ngFor="let image of gallery">
+        <div class="imCard" (click)="catchTypeSrc(image.url, image.decription, image.lecture)">
+            <img *ngIf="image.lecture === 'img'" [lazyLoad]="image.url" alt="{{image.id}}" />
+            <video *ngIf="image.lecture === 'vid'">
+                         <source src="{{ image.url }}" type="video/mp4">
+          </video>
+
+
+        </div>
+    </ng-container>
+</section>
+<app-modal-image [popUpImage]="popUpImage" [lecture]="lecture" [description]="description" [gallery]="gallery" (updatePopUpImage)="updatePopUpImageHandler($event)"></app-modal-image>

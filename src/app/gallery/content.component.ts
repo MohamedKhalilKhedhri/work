@@ -33,8 +33,7 @@ export class ContentComponent {
   constructor(private housingService: HousingService) {}
   ngOnInit(): void {
     this.gallery = this.housingService.getHousingLocationFilter(this.filterType);
-      console.log(this.gallery);
-      console.log(this.filterType);
+  
   }
 
 
